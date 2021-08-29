@@ -1,0 +1,15 @@
+# This programe able to determine a phone number is valid or not. 9 digit phone number.
+import re
+
+n = int(input())
+for i in range(n):
+    if re.match(r'[789]\d{9}$', input()):
+        print("YES")
+    else:
+        print("NO")
+        
+        
+        
+# if we like to determine above 9 digit then we have to change bellow conditions in for loop statement
+
+#  a = input() if re.search(r'([789]\d{9}?)', a) and len(a)==10 print("Yes") else: print("No")
